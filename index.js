@@ -13,3 +13,7 @@ app.get("/", (req, res) => {
 app.get("/:name", (req, res) => {
   res.send(`Hello ${req.params.name}, welcome!`);
 });
+
+app.get("/test/", (req, res) => {
+  res.send(`if you see this you success`);
+});
