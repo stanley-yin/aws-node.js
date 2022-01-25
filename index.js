@@ -11,5 +11,5 @@ app.get("/", (req, res) => {
 });
 
 app.get("/:name", (req, res) => {
-  res.send(`Hello ${req.params.name}`);
+  res.send(`Hello ${req.params.name}, welcome!`);
 });
