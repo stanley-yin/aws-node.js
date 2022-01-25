@@ -18,7 +18,7 @@ app.listen(port, () => {
 app.get("/", (req, res) => {
   res.send(`Welcome to my server! This is the homepage on porter ${port}`);
   connection.query(
-    'SELECT * FROM `test1` WHERE `user_id` = "1"',
+    'SELECT * FROM `user_name` WHERE `user_id` = "1"',
     function (err, results, fields) {
       console.log(results); // results contains rows returned by server
       console.log(fields); // fields contains extra meta data about results, if available
