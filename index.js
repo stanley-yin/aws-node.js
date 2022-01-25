@@ -7,7 +7,7 @@ app.listen(port, () => {
 });
 
 app.get("/", (req, res) => {
-  res.send(`Welcome to my server! This is the homepage on porttttt ${port}`);
+  res.send(`Welcome to my server! This is the homepage on porter ${port}`);
 });
 
 app.get("/:name", (req, res) => {
