@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3006;
+const port = 3005;
 const port2 = 3007;
 const db = require("./connect-sql");
 const SocketServer = require("ws").Server;
