@@ -6,12 +6,15 @@ const db = require("./connect-sql");
 const SocketServer = require("ws").Server;
 const cors = require("cors"); // CORS
 
-
+const whitelist = ['https://stanley-yin.github.io']
 const corsOptions = {
   // 協助拿到cookie資料
   credentials: true,
   origin: (origin, cb) => {
     console.log(`origin:${origin}`);
+    if (whitelist.indexOf(origin) !== -1) {
+      cb(null, true)
+      }
     cb(null, true);
   },
 };
