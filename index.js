@@ -12,9 +12,9 @@ const corsOptions = {
   credentials: true,
   origin: (origin, cb) => {
     console.log(`origin:${origin}`);
-    if (whitelist.indexOf(origin) !== -1) {
-      cb(null, true)
-      }
+    // if (whitelist.indexOf(origin) !== -1) {
+    //   cb(null, true)
+    //   }
     cb(null, true);
   },
 };
